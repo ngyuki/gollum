@@ -59,6 +59,10 @@ module Precious
         @upload_dest
       end
 
+      def allow_actions
+        !@hide_actions
+      end
+
       def has_header
         if @header
           @header.formatted_data.strip.empty? ? false : true

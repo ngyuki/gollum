@@ -351,6 +351,7 @@ module Precious
       @editable      = false
       @bar_side      = wiki.bar_side
       @allow_uploads = wiki.allow_uploads
+      @hide_actions  = true
       mustache :page
     end
 
