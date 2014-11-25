@@ -89,10 +89,12 @@
   </div>
     <textarea id="gollum-editor-body"
      data-markup-lang="{{format}}" name="content" class="mousetrap">{{content}}</textarea>
+    {{#allow_uploads}}
     <div>
       <i class="fa fa-spinner fa-spin"></i>
       Uploading file ...
     </div>
+    {{/allow_uploads}}
 
     {{#header}}
     <div id="gollum-editor-edit-header" class="collapsed">
