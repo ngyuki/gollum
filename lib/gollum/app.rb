@@ -96,6 +96,8 @@ module Precious
       @js  = settings.wiki_options[:js]
       @mathjax_config = settings.wiki_options[:mathjax_config]
       @allow_editing = settings.wiki_options[:allow_editing]
+      @author_parameters = session['gollum.author']
+      @default_author_name = Gollum::Wiki.default_committer_name
     end
 
     get '/' do

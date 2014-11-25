@@ -32,6 +32,14 @@ module Precious
         @js
       end
 
+      def author_name_email
+        if @author_parameters.nil?
+          @default_author_name
+        else
+          @author_parameters[:name] + ' <' + @author_parameters[:email] + '>'
+        end
+      end
+
     end
   end
 end

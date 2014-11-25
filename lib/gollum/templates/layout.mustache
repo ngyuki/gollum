@@ -52,8 +52,19 @@
   {{#js}}<script type="text/javascript" src="{{base_url}}/custom.js"></script>{{/js}}
 
   <title>{{title}}</title>
+  <style>
+    div.author_name_email {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-style: italic;
+    }
+  </style>
 </head>
 <body>
+<div class="author_name_email">
+  {{author_name_email}}
+</div>
 
 {{{yield}}}
 
